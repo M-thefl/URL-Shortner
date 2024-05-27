@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 To install and run this project locally, follow these steps:
 
 1. Clone the repository to your local machine:<br />
-   `git clone https://github.com/your_username/flask-url-shortener.git`
+   `git clone https://github.com/M-thefl/URL-Shortner.git `
 2. Navigate to the project directory:<br />
    ``cd URL-Shortner``
 
