@@ -70,7 +70,7 @@ Create a new Pull Request.
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
+## Contact
 If you have any questions or suggestions, feel free to contact me at Mahbodfl1@gmail.com
 
 ``good luck (; 🌙``<br />
