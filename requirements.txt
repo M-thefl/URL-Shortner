@@ -1,0 +1,8 @@
+bcrypt
+validators
+hashlib
+requests
+wtforms
+flask_wtf
+flask
+flask_sqlalchemy

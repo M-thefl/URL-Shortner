@@ -1,0 +1,94 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #29323c, #485563);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    color: #4e54c8;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.flash-message {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4e54c8;
+    box-shadow: 0 0 10px rgba(78, 84, 200, 0.5);
+}
+
+.btn-primary, .btn-secondary {
+    margin-top: 20px;
+    width: 100%;
+    background: #4e54c8;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background: #8f94fb;
+}
+
+a {
+    color: #4e54c8;
+}
+
+a:hover {
+    color: #8f94fb;
+}

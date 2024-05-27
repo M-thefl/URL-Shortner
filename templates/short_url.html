@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL 📐</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Shortened URL📐</h1>
+        <p>Logged in as: {{ current_user }}</p>
+        <form method="POST" action="{{ url_for('logout') }}">
+            <button type="submit" class="btn btn-secondary">Logout</button>
+            <button type= "shortener"  class="btn btn-secondary">Back</button>
+        </form>
+        <div class="alert alert-success">
+            <p>Shortened URL 🎈: <a href="{{ url_for('redirect_to_long_url', short_url=short_url, _external=True) }}">{{ url_for('redirect_to_long_url', short_url=short_url, _external=True) }}</a></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL 📐</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for}}

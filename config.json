@@ -1,0 +1,6 @@
+{
+    "app.register.info": "discord-webhook",
+    "app.logger.info": "discord-webhook",
+    "app.URLShortened.info": "discord-webhook"
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener 🎃</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener 🎃</h1>
+        <p>Logged in as: {{ current_user }}</p>
+        <form method="POST">
+            {{ form.csrf_token }}
+            <div class="form-group">
+                <label for="url">URL:</label>
+                {{ form.url(class="form-control") }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+        <form method="POST" action="{{ url_for('logout') }}">
+            <button type="submit" class="btn btn-secondary">Logout</button>
+        </form>
+        {% for message in get_flashed_messages() %}
+            <div class="alert alert-info flash-message">{{ message }}</div>
+        {% endfor %}
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
